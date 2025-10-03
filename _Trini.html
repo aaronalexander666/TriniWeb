@@ -1,0 +1,916 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinidad & Tobago: Our Nation at Risk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 3px solid #ffde00;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffde00;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .flag-strip {
+            display: flex;
+            height: 20px;
+            margin: 20px 0;
+        }
+        
+        .red-stripe { background-color: #ce1126; flex: 1; }
+        .white-stripe { background-color: white; flex: 1; }
+        .black-stripe { background-color: black; flex: 1; }
+        
+        .content-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: #ffde00;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffde00;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #ff9d00;
+            font-size: 1.8rem;
+            margin: 20px 0 15px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .issue-card {
+            background: rgba(139, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ffde00;
+        }
+        
+        .issue-card:hover {
+            transform: translateY(-10px);
+            background: rgba(139, 0, 0, 0.9);
+        }
+        
+        .issue-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 222, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ffde00;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffde00;
+            margin: 10px 0;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 3px solid #ffde00;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffde00;
+            color: #8b0000;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+        }
+        
+        .cta-button:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 30px;
+            border-top: 3px solid #ffde00;
+            border-radius: 10px;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.1;
+            font-size: 8rem;
+            pointer-events: none;
+            z-index: -1;
+            color: #ffde00;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">TT</div>
+    
+    <header>
+        <h1>TRINIDAD & TOBAGO</h1>
+        <div class="flag-strip">
+            <div class="red-stripe"></div>
+            <div class="white-stripe"></div>
+            <div class="black-stripe"></div>
+        </div>
+        <p class="subtitle">Our Nation at Risk: Government Policies Threatening Our Future</p>
+    </header>
+    
+    <div class="container">
+        <section class="content-section">
+            <h2>The Crisis We Face</h2>
+            <p>Our beloved Trinidad and Tobago stands at a crossroads. While our rich cultural heritage and natural beauty remain unparalleled, critical decisions made by those in power threaten the very foundation of our nation's sovereignty and prosperity.</p>
+            <p>This platform exposes how current government policies are systematically compromising our national interests, undermining local industries, and opening our doors to foreign exploitation under the guise of development and progress.</p>
+        </section>
+        
+        <section class="content-section">
+            <h2>Critical Issues Facing Our Nation</h2>
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <h3>🔴 Energy Sector Sell-Out</h3>
+                    <p>Foreign corporations gaining unprecedented control over our oil and gas reserves through unfavorable contracts that prioritize profits over national benefit. Local energy companies being sidelined while foreign entities dominate our most valuable resource sector.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Land Grabbing & Privatization</h3>
+                    <p>Public lands and state-owned enterprises being sold off at undervalued prices to foreign investors. Critical infrastructure projects awarded to international consortiums with little regard for local participation or benefit.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Cultural Erosion</h3>
+                    <p>Traditional festivals and cultural practices being commercialized and controlled by foreign interests. Authentic Trinidadian identity being diluted to cater to tourist markets rather than preserving our unique heritage.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Economic Dependency</h3>
+                    <p>Over-reliance on foreign loans and investments creating dangerous debt cycles. Local businesses unable to compete against subsidized foreign imports, leading to increased unemployment and economic vulnerability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Alarming Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value">73%</div>
+                    <p>of major energy contracts now held by foreign corporations</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">45%</div>
+                    <p>decline in locally-owned businesses over the past decade</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">$2.8B</div>
+                    <p>national debt increase attributed to foreign borrowing</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">60%</div>
+                    <p>of strategic land acquisitions by foreign entities</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>The Hidden Agendas</h2>
+            <h3>International Pressure Tactics</h3>
+            <p>Government capitulation to demands from international financial institutions requiring privatization of state assets as loan conditions. Structural adjustment programs undermining democratic decision-making in favor of corporate interests.</p>
+            
+            <h3>Unequal Partnership Agreements</h3>
+            <p>Bilateral trade agreements that disproportionately benefit foreign partners while limiting protections for local industries. Investment treaties that restrict government ability to regulate in public interest.</p>
+            
+            <h3>Resource Exploitation Schemes</h3>
+            <p>Mining and extraction permits granted with minimal environmental oversight. Revenue-sharing arrangements that favor foreign operators over national treasury. Lack of transparency in natural resource management contracts.</p>
+        </section>
+        
+        <div class="call-to-action">
+            <h2>OUR VOICE, OUR NATION</h2>
+            <p>We must unite to protect Trinidad and Tobago's sovereignty and future!</p>
+            <a href="#" class="cta-button">JOIN THE RESISTANCE</a>
+            <a href="#" class="cta-button">DEMAND TRANSPARENCY</a>
+        </div>
+        
+        <section class="content-section">
+            <h2>What You Can Do</h2>
+            <p><strong>Educate Yourself:</strong> Research government contracts and foreign investment deals. Attend public forums and parliamentary sessions.</p>
+            <p><strong>Speak Out:</strong> Share information about these issues with your community. Use social media to raise awareness about threats to our sovereignty.</p>
+            <p><strong>Demand Accountability:</strong> Contact your representatives. Demand transparent reporting on all foreign agreements and their impact on our nation.</p>
+            <p><strong>Support Local:</strong> Patronize Trinidadian-owned businesses. Promote local culture and resist foreign cultural domination.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>This platform is dedicated to preserving the sovereignty and authentic spirit of Trinidad and Tobago.</p>
+        <p>© 2023 - Citizens for National Integrity | Together we stand for TT</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinidad & Tobago: Our Nation at Risk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 3px solid #ffde00;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffde00;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .flag-strip {
+            display: flex;
+            height: 20px;
+            margin: 20px 0;
+        }
+        
+        .red-stripe { background-color: #ce1126; flex: 1; }
+        .white-stripe { background-color: white; flex: 1; }
+        .black-stripe { background-color: black; flex: 1; }
+        
+        .content-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: #ffde00;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffde00;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #ff9d00;
+            font-size: 1.8rem;
+            margin: 20px 0 15px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .issue-card {
+            background: rgba(139, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ffde00;
+        }
+        
+        .issue-card:hover {
+            transform: translateY(-10px);
+            background: rgba(139, 0, 0, 0.9);
+        }
+        
+        .issue-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 222, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ffde00;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffde00;
+            margin: 10px 0;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 3px solid #ffde00;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffde00;
+            color: #8b0000;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+        }
+        
+        .cta-button:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 30px;
+            border-top: 3px solid #ffde00;
+            border-radius: 10px;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.1;
+            font-size: 8rem;
+            pointer-events: none;
+            z-index: -1;
+            color: #ffde00;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">TT</div>
+    
+    <header>
+        <h1>TRINIDAD & TOBAGO</h1>
+        <div class="flag-strip">
+            <div class="red-stripe"></div>
+            <div class="white-stripe"></div>
+            <div class="black-stripe"></div>
+        </div>
+        <p class="subtitle">Our Nation at Risk: Government Policies Threatening Our Future</p>
+    </header>
+    
+    <div class="container">
+        <section class="content-section">
+            <h2>The Crisis We Face</h2>
+            <p>Our beloved Trinidad and Tobago stands at a crossroads. While our rich cultural heritage and natural beauty remain unparalleled, critical decisions made by those in power threaten the very foundation of our nation's sovereignty and prosperity.</p>
+            <p>This platform exposes how current government policies are systematically compromising our national interests, undermining local industries, and opening our doors to foreign exploitation under the guise of development and progress.</p>
+        </section>
+        
+        <section class="content-section">
+            <h2>Critical Issues Facing Our Nation</h2>
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <h3>🔴 Energy Sector Sell-Out</h3>
+                    <p>Foreign corporations gaining unprecedented control over our oil and gas reserves through unfavorable contracts that prioritize profits over national benefit. Local energy companies being sidelined while foreign entities dominate our most valuable resource sector.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Land Grabbing & Privatization</h3>
+                    <p>Public lands and state-owned enterprises being sold off at undervalued prices to foreign investors. Critical infrastructure projects awarded to international consortiums with little regard for local participation or benefit.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Cultural Erosion</h3>
+                    <p>Traditional festivals and cultural practices being commercialized and controlled by foreign interests. Authentic Trinidadian identity being diluted to cater to tourist markets rather than preserving our unique heritage.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Economic Dependency</h3>
+                    <p>Over-reliance on foreign loans and investments creating dangerous debt cycles. Local businesses unable to compete against subsidized foreign imports, leading to increased unemployment and economic vulnerability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Alarming Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value">73%</div>
+                    <p>of major energy contracts now held by foreign corporations</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">45%</div>
+                    <p>decline in locally-owned businesses over the past decade</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">$2.8B</div>
+                    <p>national debt increase attributed to foreign borrowing</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">60%</div>
+                    <p>of strategic land acquisitions by foreign entities</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>The Hidden Agendas</h2>
+            <h3>International Pressure Tactics</h3>
+            <p>Government capitulation to demands from international financial institutions requiring privatization of state assets as loan conditions. Structural adjustment programs undermining democratic decision-making in favor of corporate interests.</p>
+            
+            <h3>Unequal Partnership Agreements</h3>
+            <p>Bilateral trade agreements that disproportionately benefit foreign partners while limiting protections for local industries. Investment treaties that restrict government ability to regulate in public interest.</p>
+            
+            <h3>Resource Exploitation Schemes</h3>
+            <p>Mining and extraction permits granted with minimal environmental oversight. Revenue-sharing arrangements that favor foreign operators over national treasury. Lack of transparency in natural resource management contracts.</p>
+        </section>
+        
+        <div class="call-to-action">
+            <h2>OUR VOICE, OUR NATION</h2>
+            <p>We must unite to protect Trinidad and Tobago's sovereignty and future!</p>
+            <a href="#" class="cta-button">JOIN THE RESISTANCE</a>
+            <a href="#" class="cta-button">DEMAND TRANSPARENCY</a>
+        </div>
+        
+        <section class="content-section">
+            <h2>What You Can Do</h2>
+            <p><strong>Educate Yourself:</strong> Research government contracts and foreign investment deals. Attend public forums and parliamentary sessions.</p>
+            <p><strong>Speak Out:</strong> Share information about these issues with your community. Use social media to raise awareness about threats to our sovereignty.</p>
+            <p><strong>Demand Accountability:</strong> Contact your representatives. Demand transparent reporting on all foreign agreements and their impact on our nation.</p>
+            <p><strong>Support Local:</strong> Patronize Trinidadian-owned businesses. Promote local culture and resist foreign cultural domination.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>This platform is dedicated to preserving the sovereignty and authentic spirit of Trinidad and Tobago.</p>
+        <p>© 2023 - Citizens for National Integrity | Together we stand for TT</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinidad & Tobago: Our Nation at Risk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #8b0000 0%, #000000 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 3px solid #ffde00;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffde00;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .flag-strip {
+            display: flex;
+            height: 20px;
+            margin: 20px 0;
+        }
+        
+        .red-stripe { background-color: #ce1126; flex: 1; }
+        .white-stripe { background-color: white; flex: 1; }
+        .black-stripe { background-color: black; flex: 1; }
+        
+        .content-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: #ffde00;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffde00;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #ff9d00;
+            font-size: 1.8rem;
+            margin: 20px 0 15px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .issue-card {
+            background: rgba(139, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid #ffde00;
+        }
+        
+        .issue-card:hover {
+            transform: translateY(-10px);
+            background: rgba(139, 0, 0, 0.9);
+        }
+        
+        .issue-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 222, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ffde00;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffde00;
+            margin: 10px 0;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 3px solid #ffde00;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffde00;
+            color: #8b0000;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+        }
+        
+        .cta-button:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 30px;
+            border-top: 3px solid #ffde00;
+            border-radius: 10px;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.1;
+            font-size: 8rem;
+            pointer-events: none;
+            z-index: -1;
+            color: #ffde00;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">TT</div>
+    
+    <header>
+        <h1>TRINIDAD & TOBAGO</h1>
+        <div class="flag-strip">
+            <div class="red-stripe"></div>
+            <div class="white-stripe"></div>
+            <div class="black-stripe"></div>
+        </div>
+        <p class="subtitle">Our Nation at Risk: Government Policies Threatening Our Future</p>
+    </header>
+    
+    <div class="container">
+        <section class="content-section">
+            <h2>The Crisis We Face</h2>
+            <p>Our beloved Trinidad and Tobago stands at a crossroads. While our rich cultural heritage and natural beauty remain unparalleled, critical decisions made by those in power threaten the very foundation of our nation's sovereignty and prosperity.</p>
+            <p>This platform exposes how current government policies are systematically compromising our national interests, undermining local industries, and opening our doors to foreign exploitation under the guise of development and progress.</p>
+        </section>
+        
+        <section class="content-section">
+            <h2>Critical Issues Facing Our Nation</h2>
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <h3>🔴 Energy Sector Sell-Out</h3>
+                    <p>Foreign corporations gaining unprecedented control over our oil and gas reserves through unfavorable contracts that prioritize profits over national benefit. Local energy companies being sidelined while foreign entities dominate our most valuable resource sector.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Land Grabbing & Privatization</h3>
+                    <p>Public lands and state-owned enterprises being sold off at undervalued prices to foreign investors. Critical infrastructure projects awarded to international consortiums with little regard for local participation or benefit.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Cultural Erosion</h3>
+                    <p>Traditional festivals and cultural practices being commercialized and controlled by foreign interests. Authentic Trinidadian identity being diluted to cater to tourist markets rather than preserving our unique heritage.</p>
+                </div>
+                
+                <div class="issue-card">
+                    <h3>🔴 Economic Dependency</h3>
+                    <p>Over-reliance on foreign loans and investments creating dangerous debt cycles. Local businesses unable to compete against subsidized foreign imports, leading to increased unemployment and economic vulnerability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>Alarming Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-value">73%</div>
+                    <p>of major energy contracts now held by foreign corporations</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">45%</div>
+                    <p>decline in locally-owned businesses over the past decade</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">$2.8B</div>
+                    <p>national debt increase attributed to foreign borrowing</p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-value">60%</div>
+                    <p>of strategic land acquisitions by foreign entities</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>The Hidden Agendas</h2>
+            <h3>International Pressure Tactics</h3>
+            <p>Government capitulation to demands from international financial institutions requiring privatization of state assets as loan conditions. Structural adjustment programs undermining democratic decision-making in favor of corporate interests.</p>
+            
+            <h3>Unequal Partnership Agreements</h3>
+            <p>Bilateral trade agreements that disproportionately benefit foreign partners while limiting protections for local industries. Investment treaties that restrict government ability to regulate in public interest.</p>
+            
+            <h3>Resource Exploitation Schemes</h3>
+            <p>Mining and extraction permits granted with minimal environmental oversight. Revenue-sharing arrangements that favor foreign operators over national treasury. Lack of transparency in natural resource management contracts.</p>
+        </section>
+        
+        <div class="call-to-action">
+            <h2>OUR VOICE, OUR NATION</h2>
+            <p>We must unite to protect Trinidad and Tobago's sovereignty and future!</p>
+            <a href="#" class="cta-button">JOIN THE RESISTANCE</a>
+            <a href="#" class="cta-button">DEMAND TRANSPARENCY</a>
+        </div>
+        
+        <section class="content-section">
+            <h2>What You Can Do</h2>
+            <p><strong>Educate Yourself:</strong> Research government contracts and foreign investment deals. Attend public forums and parliamentary sessions.</p>
+            <p><strong>Speak Out:</strong> Share information about these issues with your community. Use social media to raise awareness about threats to our sovereignty.</p>
+            <p><strong>Demand Accountability:</strong> Contact your representatives. Demand transparent reporting on all foreign agreements and their impact on our nation.</p>
+            <p><strong>Support Local:</strong> Patronize Trinidadian-owned businesses. Promote local culture and resist foreign cultural domination.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>This platform is dedicated to preserving the sovereignty and authentic spirit of Trinidad and Tobago.</p>
+        <p>© 2023 - Citizens for National Integrity | Together we stand for TT</p>
+    </footer>
+</body>
+</html>
